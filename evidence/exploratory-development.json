@@ -1,0 +1,43 @@
+{
+  "scope": "exploratory development only",
+  "metrics": {
+    "keyword": {
+      "confusion_matrix": [
+        [
+          24,
+          24
+        ],
+        [
+          27,
+          21
+        ]
+      ],
+      "precision": 0.4666666666666667,
+      "recall": 0.4375,
+      "false_positive_rate": 0.5,
+      "f1": 0.45161290322580644
+    },
+    "context": {
+      "confusion_matrix": [
+        [
+          48,
+          0
+        ],
+        [
+          0,
+          48
+        ]
+      ],
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "f1": 1.0
+    }
+  },
+  "paired_errors": {
+    "both_correct": 45,
+    "keyword_only_wrong": 51,
+    "context_only_wrong": 0,
+    "both_wrong": 0
+  }
+}

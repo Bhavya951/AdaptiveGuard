@@ -1,0 +1,87 @@
+{
+  "context_decision_reasons": {
+    "non_execution": 30,
+    "permitted": 30,
+    "violation": 60
+  },
+  "context_error_reasons": {},
+  "errors_by_dialogue_type": {
+    "context": {
+      "fn": {},
+      "fp": {}
+    },
+    "final_keyword": {
+      "fn": {
+        "execution_single_state": 24,
+        "execution_updated_state": 36
+      },
+      "fp": {}
+    },
+    "history_keyword": {
+      "fn": {
+        "execution_single_state": 24,
+        "execution_updated_state": 36
+      },
+      "fp": {}
+    }
+  },
+  "examples": 120,
+  "matched_pairs": {
+    "both_correct": {
+      "context": 60,
+      "final_keyword": 0,
+      "history_keyword": 0
+    },
+    "count": 60
+  },
+  "metrics": {
+    "context": {
+      "confusion_matrix": [
+        [
+          60,
+          0
+        ],
+        [
+          0,
+          60
+        ]
+      ],
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "final_keyword": {
+      "confusion_matrix": [
+        [
+          60,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "history_keyword": {
+      "confusion_matrix": [
+        [
+          60,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "f1": 0.0,
+      "false_positive_rate": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "decisions": [
+    {
+      "C": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "violation"
+      },
+      "D": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "altered_order",
+      "expected_label": 1,
+      "id": "ordered-blocked"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "permitted"
+      },
+      "D": {
+        "outcome": "fp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "altered_order",
+      "expected_label": 0,
+      "id": "ordered-clear"
+    },
+    {
+      "C": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_state"
+      },
+      "D": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "irrelevant_context",
+      "expected_label": 1,
+      "id": "distracted-blocked"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_state"
+      },
+      "D": {
+        "outcome": "fp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "irrelevant_context",
+      "expected_label": 0,
+      "id": "distracted-clear"
+    },
+    {
+      "C": {
+        "outcome": "fp",
+        "prediction": 1,
+        "reason": "violation"
+      },
+      "D": {
+        "outcome": "fp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "quoted_state",
+      "expected_label": 0,
+      "id": "quote-in-report"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_request"
+      },
+      "D": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_policy_overlap"
+      },
+      "category": "quoted_request",
+      "expected_label": 0,
+      "id": "quote-in-request"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_request"
+      },
+      "D": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "non_execution"
+      },
+      "category": "negation",
+      "expected_label": 0,
+      "id": "negated-execution"
+    },
+    {
+      "C": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_state"
+      },
+      "D": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "state_reversal",
+      "expected_label": 1,
+      "id": "reversal-blocked"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_state"
+      },
+      "D": {
+        "outcome": "fp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "state_reversal",
+      "expected_label": 0,
+      "id": "reversal-clear"
+    },
+    {
+      "C": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "violation"
+      },
+      "D": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "state_reversal",
+      "expected_label": 1,
+      "id": "reversal-blocked-explicit"
+    },
+    {
+      "C": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_request"
+      },
+      "D": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_directive"
+      },
+      "category": "indirect_paraphrase",
+      "expected_label": 1,
+      "id": "indirect-execution"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_request"
+      },
+      "D": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_directive"
+      },
+      "category": "indirect_paraphrase",
+      "expected_label": 0,
+      "id": "indirect-text"
+    },
+    {
+      "C": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_state"
+      },
+      "D": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "measurement_paraphrase",
+      "expected_label": 1,
+      "id": "threshold-blocked"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "unresolved_state"
+      },
+      "D": {
+        "outcome": "fp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "measurement_paraphrase",
+      "expected_label": 0,
+      "id": "threshold-clear"
+    },
+    {
+      "C": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_request"
+      },
+      "D": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_directive"
+      },
+      "category": "user_state",
+      "expected_label": 1,
+      "id": "threshold-user-report"
+    },
+    {
+      "C": {
+        "outcome": "fn",
+        "prediction": 0,
+        "reason": "unresolved_state"
+      },
+      "D": {
+        "outcome": "tp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "negative_state",
+      "expected_label": 1,
+      "id": "pier-blocked"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "permitted"
+      },
+      "D": {
+        "outcome": "fp",
+        "prediction": 1,
+        "reason": "restricted_action_overlap"
+      },
+      "category": "negative_state",
+      "expected_label": 0,
+      "id": "pier-clear"
+    },
+    {
+      "C": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "non_execution"
+      },
+      "D": {
+        "outcome": "tn",
+        "prediction": 0,
+        "reason": "non_execution"
+      },
+      "category": "harmless_explanation",
+      "expected_label": 0,
+      "id": "explanation-control"
+    }
+  ],
+  "errors_by_category": {
+    "C": {
+      "fn": {
+        "indirect_paraphrase": 1,
+        "irrelevant_context": 1,
+        "measurement_paraphrase": 1,
+        "negative_state": 1,
+        "state_reversal": 1,
+        "user_state": 1
+      },
+      "fp": {
+        "quoted_state": 1
+      }
+    },
+    "D": {
+      "fn": {
+        "indirect_paraphrase": 1,
+        "user_state": 1
+      },
+      "fp": {
+        "altered_order": 1,
+        "irrelevant_context": 1,
+        "measurement_paraphrase": 1,
+        "negative_state": 1,
+        "quoted_state": 1,
+        "state_reversal": 1
+      }
+    }
+  },
+  "examples": 18,
+  "keyword_coverage": {
+    "earlier_example_hits": 0,
+    "examples": 120,
+    "final_hits": 0,
+    "marker": "override-demo-rule",
+    "policy_hits": 0
+  },
+  "metrics": {
+    "C": {
+      "confusion_matrix": [
+        [
+          9,
+          1
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "f1": 0.36363636363636365,
+      "false_positive_rate": 0.1,
+      "precision": 0.6666666666666666,
+      "recall": 0.25
+    },
+    "D": {
+      "confusion_matrix": [
+        [
+          4,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "f1": 0.6,
+      "false_positive_rate": 0.6,
+      "precision": 0.5,
+      "recall": 0.75
+    }
+  },
+  "unresolved": {
+    "C": [
+      {
+        "id": "distracted-blocked",
+        "reason": "unresolved_state"
+      },
+      {
+        "id": "distracted-clear",
+        "reason": "unresolved_state"
+      },
+      {
+        "id": "quote-in-request",
+        "reason": "unresolved_request"
+      },
+      {
+        "id": "negated-execution",
+        "reason": "unresolved_request"
+      },
+      {
+        "id": "reversal-blocked",
+        "reason": "unresolved_state"
+      },
+      {
+        "id": "reversal-clear",
+        "reason": "unresolved_state"
+      },
+      {
+        "id": "indirect-execution",
+        "reason": "unresolved_request"
+      },
+      {
+        "id": "indirect-text",
+        "reason": "unresolved_request"
+      },
+      {
+        "id": "threshold-blocked",
+        "reason": "unresolved_state"
+      },
+      {
+        "id": "threshold-clear",
+        "reason": "unresolved_state"
+      },
+      {
+        "id": "threshold-user-report",
+        "reason": "unresolved_request"
+      },
+      {
+        "id": "pier-blocked",
+        "reason": "unresolved_state"
+      }
+    ],
+    "D": [
+      {
+        "id": "quote-in-request",
+        "reason": "unresolved_policy_overlap"
+      },
+      {
+        "id": "indirect-execution",
+        "reason": "unresolved_directive"
+      },
+      {
+        "id": "indirect-text",
+        "reason": "unresolved_directive"
+      },
+      {
+        "id": "threshold-user-report",
+        "reason": "unresolved_directive"
+      }
+    ]
+  }
+}

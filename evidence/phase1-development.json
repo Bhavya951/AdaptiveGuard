@@ -1,0 +1,210 @@
+{
+  "marker_prevalence": {
+    "dialogues": 96,
+    "historical_marker": 35,
+    "final_marker": 14,
+    "benign_historical_only": 15
+  },
+  "metrics": {
+    "final": {
+      "confusion_matrix": [
+        [
+          39,
+          9
+        ],
+        [
+          43,
+          5
+        ]
+      ],
+      "precision": 0.35714285714285715,
+      "recall": 0.10416666666666667,
+      "false_positive_rate": 0.1875,
+      "f1": 0.16129032258064516
+    },
+    "history": {
+      "confusion_matrix": [
+        [
+          24,
+          24
+        ],
+        [
+          27,
+          21
+        ]
+      ],
+      "precision": 0.4666666666666667,
+      "recall": 0.4375,
+      "false_positive_rate": 0.5,
+      "f1": 0.45161290322580644
+    }
+  },
+  "delta_f1": 0.29032258064516125,
+  "delta_f1_ci95": [
+    0.1681539289102738,
+    0.43171797489516806
+  ],
+  "positive_flips": {
+    "negative_gold": 15,
+    "positive_gold": 16
+  },
+  "opposite_label_pair_diagnostic": {
+    "dialogues": 48,
+    "errors": {
+      "final": 24,
+      "history": 25
+    }
+  },
+  "family_confusion_counts": {
+    "album": {
+      "final": {
+        "fn": 4,
+        "tn": 4
+      },
+      "history": {
+        "fn": 2,
+        "tn": 3,
+        "tp": 2,
+        "fp": 1
+      }
+    },
+    "arcade": {
+      "final": {
+        "fn": 4,
+        "tn": 4
+      },
+      "history": {
+        "fn": 4,
+        "tn": 3,
+        "fp": 1
+      }
+    },
+    "cards": {
+      "final": {
+        "fn": 4,
+        "tn": 4
+      },
+      "history": {
+        "tp": 4,
+        "fp": 3,
+        "tn": 1
+      }
+    },
+    "choir": {
+      "final": {
+        "fn": 4,
+        "tn": 2,
+        "fp": 2
+      },
+      "history": {
+        "tp": 1,
+        "tn": 2,
+        "fn": 3,
+        "fp": 2
+      }
+    },
+    "clay": {
+      "final": {
+        "fn": 2,
+        "tn": 2,
+        "tp": 2,
+        "fp": 2
+      },
+      "history": {
+        "tp": 3,
+        "tn": 1,
+        "fn": 1,
+        "fp": 3
+      }
+    },
+    "dolls": {
+      "final": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "tn": 3
+      },
+      "history": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 1,
+        "tn": 1
+      }
+    },
+    "draw": {
+      "final": {
+        "fn": 4,
+        "tn": 4
+      },
+      "history": {
+        "fn": 3,
+        "tn": 3,
+        "tp": 1,
+        "fp": 1
+      }
+    },
+    "maze": {
+      "final": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 3,
+        "tn": 1
+      },
+      "history": {
+        "tp": 1,
+        "fp": 4,
+        "fn": 3
+      }
+    },
+    "museum": {
+      "final": {
+        "fn": 4,
+        "tn": 4
+      },
+      "history": {
+        "fn": 3,
+        "fp": 2,
+        "tn": 2,
+        "tp": 1
+      }
+    },
+    "origami": {
+      "final": {
+        "fn": 4,
+        "tn": 4
+      },
+      "history": {
+        "fn": 3,
+        "tn": 3,
+        "tp": 1,
+        "fp": 1
+      }
+    },
+    "parcel": {
+      "final": {
+        "fn": 4,
+        "tn": 4
+      },
+      "history": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 2,
+        "tn": 2
+      }
+    },
+    "puzzle": {
+      "final": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "tn": 3
+      },
+      "history": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 2,
+        "tn": 3
+      }
+    }
+  }
+}
